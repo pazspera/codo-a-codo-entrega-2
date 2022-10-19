@@ -27,13 +27,13 @@
 }
 
 @media (min-width: 992px) {
-  main {
+  .main-tickets {
     max-width: 70vw;
     margin: 0 auto;
   }
 }
 @media (min-width: 1200px) {
-  main {
+  .main-tickets {
     max-width: 60vw;
     margin: 0 auto;
   }
