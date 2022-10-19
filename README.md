@@ -1,1 +1,3 @@
-# codo-a-codo-entrega-2
+# Trabajo práctico #2 del curso Codo a Codo Node JS
+
+
