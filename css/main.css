@@ -1,0 +1,39 @@
+.hero {
+  min-height: 88vh;
+  background-image: url(../img/hero_final.jpg);
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  background-color: #1D4358 !important;
+}
+
+.footer__link {
+  max-width: 80px;
+  margin: 0 auto;
+}
+
+.formulario__btn {
+  background-color: #96C93E !important;
+}
+
+.navbar__img {
+  max-width: 100px;
+}
+
+.nav-link {
+  font-size: 14px !important;
+}
+
+.nav-link__highlight {
+  color: #198754 !important;
+}
+
+.turismo__img {
+  height: auto;
+}/*# sourceMappingURL=main.css.map */
