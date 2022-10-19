@@ -86,42 +86,45 @@
       </section>
 
       <!-- Formulario -->
-      <section class="container my-4">
+      <section class="container my-5">
         <div class="row">
           <div class="col">
             <h1 class="display-6 text-uppercase fs-6 text-center"><small>Venta</small><span class="d-block text-uppercase fw-bold h3">Valor de ticket $200</span></h1>
           </div>
         </div>
-        <form class="row g-3">
+        <form class="row g-3" id="formulario">
           <div class="col-12 col-md-6">
-            <input type="text" class="form-control" placeholder="Nombre" />
+            <input type="text" id="nombre" class="form-control" placeholder="Nombre" />
           </div>
           <div class="col-12 col-md-6">
-            <input type="text" class="form-control" placeholder="Apellido" />
+            <input type="text" id="apellido "class="form-control" placeholder="Apellido" />
           </div>
           <div class="col-12">
-            <input type="email" class="form-control" placeholder="Correo" />
+            <input type="email" id="email" class="form-control" placeholder="Correo" />
           </div>
           <div class="col-12 col-md-6">
             <label for="cantidad" class="form-label">Cantidad</label>
-            <input type="text" class="form-control" id="cantidad" placeholder="Cantidad" />
+            <input type="number" class="form-control" id="cantidad" placeholder="Cantidad" autocomplete="off"/>
           </div>
           <div class="col-12 col-md-6">
             <label for="categoria" class="form-label">Categoría</label>
-            <select class="form-select" id="categoria" >
-              <option value="1">Estudiante</option>
-              <option value="2">Trainee</option>
-              <option value="3">Junior</option>
+            <select class="form-select" id="categoria">
+              <option value="estudiante">Estudiante</option>
+              <option value="trainee">Trainee</option>
+              <option value="junior">Junior</option>
             </select>
           </div>
-          <div class="col-12 col-md-6">
+          <!-- El contenido de la alerta se crea acá -->
+          <div class="col-12 my-3" id="resultado">
+          </div>
+          <div class="col-12 col-md-6 mt-0">
             <div class="d-grid gap-2">
-                <button type="button" class="btn btn__form text-white" id="btn_borrar">Borrar</button>
+              <button type="button" class="btn btn__form text-white" id="btn_borrar">Borrar</button>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 mt-0">
             <div class="d-grid gap-2">
-                <button type="button" class="btn btn__form text-white" id="btn_resumen">Resumen</button>
+              <button type="button" class="btn btn__form text-white" id="btn_resumen">Resumen</button>
             </div>
           </div>
         </form>

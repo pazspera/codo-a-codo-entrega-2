@@ -26,6 +26,10 @@
   background-color: #96C93E !important;
 }
 
+body {
+  min-height: 100vh;
+}
+
 @media (min-width: 992px) {
   .main-tickets {
     max-width: 70vw;
