@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
 }
 
+.btn__form {
+  background-color: #97C93E;
+}
+
 .footer {
   background-color: #1D4358 !important;
 }
@@ -22,6 +26,18 @@
   background-color: #96C93E !important;
 }
 
+@media (min-width: 992px) {
+  main {
+    max-width: 70vw;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  main {
+    max-width: 60vw;
+    margin: 0 auto;
+  }
+}
 .navbar__img {
   max-width: 100px;
 }

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Codo a Codo NodeJS - Paz Spera</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand link-light" href="index.html"><img src="./img/codoacodo.png" class="navbar__img" alt="Logo" /> Conf Bs As</a>
+          <button
+            class="navbar-toggler text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active link-light fs-6 fw-bold" aria-current="page" href="#">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light text-white-50 fs-6" href="#">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light text-white-50 fs-6" href="#">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light text-white-50 fs-6" href="#">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light text-white-50 fs-6" href="#">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success nav-link__highlight fw-bold fs-6" href="tickets.html">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Precios -->
+      <section class="container my-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mb-3">
+          <div class="col">
+            <div class="card border border-primary d-flex align-items-center py-4">
+              <h2>Estudiante</h2>
+              <p class="text-center">Tienen un descuento</p>
+              <p><strong>80%</strong></p>
+              <p class="fs-6 text-muted text-center">*presentar documentación</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border border-success d-flex align-items-center py-4">
+              <h2>Trainee</h2>
+              <p class="text-center">Tienen un descuento</p>
+              <p><strong>50%</strong></p>
+              <p class="fs-6 text-muted text-center">*presentar documentación</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border border-warning d-flex align-items-center py-4">
+              <h2>Junior</h2>
+              <p class="text-center">Tienen un descuento</p>
+              <p><strong>15%</strong></p>
+              <p class="fs-6 text-muted text-center">*presentar documentación</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formulario -->
+      <section class="container my-4">
+        <div class="row">
+          <div class="col">
+            <h1 class="display-6 text-uppercase fs-6 text-center"><small>Venta</small><span class="d-block text-uppercase fw-bold h3">Valor de ticket $200</span></h1>
+          </div>
+        </div>
+        <form class="row g-3">
+          <div class="col-12 col-md-6">
+            <input type="text" class="form-control" placeholder="Nombre" />
+          </div>
+          <div class="col-12 col-md-6">
+            <input type="text" class="form-control" placeholder="Apellido" />
+          </div>
+          <div class="col-12">
+            <input type="email" class="form-control" placeholder="Correo" />
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="cantidad" class="form-label">Cantidad</label>
+            <input type="text" class="form-control" id="cantidad" placeholder="Cantidad" />
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="categoria" class="form-label">Categoría</label>
+            <select class="form-select" id="categoria" >
+              <option value="1">Estudiante</option>
+              <option value="2">Trainee</option>
+              <option value="3">Junior</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-grid gap-2">
+                <button type="button" class="btn btn__form text-white" id="btn_borrar">Borrar</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-grid gap-2">
+                <button type="button" class="btn btn__form text-white" id="btn_resumen">Resumen</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer  -->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-3 col-md-2 col-lg-1 d-inline-flex flex-column justify-content-center">
+            <p class="text-white text-center footer__link fs-6">Preguntas frecuentes</p>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2 d-inline-flex flex-column justify-content-center">
+            <p class="text-white text-center footer__link fs-6">Contáctanos</p>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2 d-inline-flex flex-column justify-content-center">
+            <p class="text-white text-center footer__link fs-6">Prensa</p>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2 d-inline-flex flex-column justify-content-center">
+            <p class="text-white text-center footer__link fs-6">Conferencias</p>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2 d-inline-flex flex-column justify-content-center">
+            <p class="text-white text-center footer__link fs-6">Términos y condiciones</p>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2 d-inline-flex flex-column justify-content-center">
+            <p class="text-white text-center footer__link fs-6">Privacidad</p>
+          </div>
+          <div class="col-6 col-sm-3 col-md-2 col-lg-1 d-inline-flex flex-column justify-content-center">
+            <p class="text-white text-center footer__link fs-6">Estudiantes</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
